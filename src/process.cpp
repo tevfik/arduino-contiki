@@ -46,6 +46,7 @@
 #include <stdio.h>
 
 #include "etimer.h"
+#include "ctimer.h"
 #include "process.h"
 #include "arg.h"
 
