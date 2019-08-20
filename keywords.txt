@@ -35,6 +35,51 @@ timer_reset	KEYWORD2
 timer_restart	KEYWORD2
 timer_expired	KEYWORD2
 
+etimer_set	KEYWORD2
+etimer_reset	KEYWORD2
+etimer_reset_with_new_interval	KEYWORD2
+etimer_restart	KEYWORD2
+etimer_adjust	KEYWORD2
+etimer_expiration_time	KEYWORD2
+etimer_start_time	KEYWORD2
+etimer_expired	KEYWORD2
+etimer_stop	KEYWORD2
+etimer_request_poll	KEYWORD2
+etimer_pending	KEYWORD2
+etimer_next_expiration_time	KEYWORD2
+
+ctimer_reset	KEYWORD2
+ctimer_restart	KEYWORD2
+ctimer_set	KEYWORD2
+ctimer_set_with_process	KEYWORD2
+ctimer_stop	KEYWORD2
+ctimer_expired	KEYWORD2
+ctimer_init	KEYWORD2
+
+run_kernel	KEYWORD2
+kernel_setup	KEYWORD2
+
+process_is_running	KEYWORD2
+process_init	KEYWORD2
+process_poll	KEYWORD2
+process_alloc_event	KEYWORD2
+process_exit	KEYWORD2
+process_post_synch	KEYWORD2
+process_post	KEYWORD2
+process_start	KEYWORD2
+
+list_init	KEYWORD2
+list_head	KEYWORD2
+list_tail	KEYWORD2
+list_pop 	KEYWORD2
+list_push	KEYWORD2
+list_chop	KEYWORD2
+list_add	KEYWORD2
+list_remove	KEYWORD2
+list_length	KEYWORD2
+list_copy	KEYWORD2
+list_insert	KEYWORD2
+list_item_next	KEYWORD2
 #######################################
 # Constants (LITERAL1)
 #######################################
@@ -45,3 +90,21 @@ PT_WAITING	LITERAL1
 PT_YIELDED	LITERAL1
 PT_EXITED 	LITERAL1
 PT_ENDED	LITERAL1
+
+PROCESS_BEGIN	LITERAL1
+PROCESS_END	LITERAL1
+PROCESS_EXIT	LITERAL1
+PROCESS_WAIT_EVENT	LITERAL1
+PROCESS_WAIT_EVENT_UNTIL	LITERAL1
+PROCESS_WAIT_UNTIL	LITERAL1
+PROCESS_WAIT_WHILE	LITERAL1
+PROCESS_YIELD	LITERAL1
+PROCESS_YIELD_UNTIL	LITERAL1
+PROCESS_PT_SPAWN	LITERAL1
+PROCESS_PAUSE	LITERAL1
+PROCESS_POLLHANDLER	LITERAL1
+PROCESS_EXITHANDLER	LITERAL1
+PROCESS_THREAD	LITERAL1
+PROCESS_NAME	LITERAL1
+PROCESS	LITERAL1
+
