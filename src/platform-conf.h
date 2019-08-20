@@ -19,14 +19,6 @@
 #define CCIF
 #define CLIF
 
-/* These names are deprecated, use C99 names. */
-typedef uint8_t u8_t;
-typedef uint16_t u16_t;
-typedef uint32_t u32_t;
-typedef int8_t s8_t;
-typedef int16_t s16_t;
-typedef int32_t s32_t;
-
 #ifndef BV
 #define BV(x) 								(1<<(x))
 #endif

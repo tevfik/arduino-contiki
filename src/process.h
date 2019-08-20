@@ -525,7 +525,7 @@ CCIF extern struct process *process_list;
 
 #define PROCESS_LIST() process_list
 
-
+void kernel_setup(void);
 void run_kernel(void);
 #endif /* PROCESS_H_ */
 

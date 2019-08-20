@@ -22,12 +22,8 @@ PROCESS_THREAD(blink_process, ev, data)
 void setup(){
   Serial.begin(9600);
   Serial.println("");
-  Serial.println("Process init");
-  process_init();
-  Serial.println("etimer process start");
-  process_start(&etimer_process, NULL);
-  Serial.println("ctimer init");
-  ctimer_init();
+  Serial.println("kernel setup");
+  kernel_setup();
   Serial.println("Blink process init");
   process_start(&blink_process, NULL);
 }

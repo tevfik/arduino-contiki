@@ -387,6 +387,14 @@ process_is_running(struct process *p)
 }
 /*---------------------------------------------------------------------------*/
 void
+kernel_setup(void)
+{
+  process_init();
+  process_start(&etimer_process, NULL);
+  ctimer_init();
+}
+
+void
 run_kernel(void)
 {
   process_run();
