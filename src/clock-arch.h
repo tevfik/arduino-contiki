@@ -21,7 +21,15 @@
 #ifndef clock_h_
 #define clock_h_
 
-typedef unsigned long clock_time_t;
 #define CLOCK_CONF_SECOND 1000
+
+typedef unsigned long clock_time_t;
+
+void clock_init(void);
+clock_time_t  clock_time(void);
+unsigned long clock_seconds(void);
+void clock_set_seconds(unsigned long sec);
+void clock_delay(unsigned int i);
+void clock_wait(clock_time_t t);
 
 #endif
